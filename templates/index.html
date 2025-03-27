@@ -19,7 +19,7 @@
         <button type="submit">Add Food</button>
     </form>
 
-    <!-- List of food items -->
+    <!-- Food inventory -->
     <h2>Food Inventory</h2>
     <ul>
         {% for item in food_items %}
@@ -27,7 +27,7 @@
         {% endfor %}
     </ul>
 
-    <!-- Form to clear all food items -->
+    <!-- Clear all items -->
     <form action="/clear" method="POST">
         <button type="submit">Clear All Items</button>
     </form>
