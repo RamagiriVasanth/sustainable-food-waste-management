@@ -9,6 +9,7 @@
 <body>
     <h1>Sustainable Food Waste Management</h1>
 
+    <!-- Form to add new food items -->
     <h2>Add Food Items</h2>
     <form action="/add_food" method="POST">
         <label for="food_name">Food Name:</label>
@@ -18,6 +19,7 @@
         <button type="submit">Add Food</button>
     </form>
 
+    <!-- List of food items -->
     <h2>Food Inventory</h2>
     <ul>
         {% for item in food_items %}
@@ -25,6 +27,7 @@
         {% endfor %}
     </ul>
 
+    <!-- Form to clear all food items -->
     <form action="/clear" method="POST">
         <button type="submit">Clear All Items</button>
     </form>
